@@ -4,12 +4,38 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <nav id="navbar">
+                <header>
+                    <h1>JS Documentation</h1>
+                    <ul class="nav-link">
+                        <li><a href="#intro">Introduction</a></li>
+                        <li><a href="#already_know">What you should already know</a></li>
+                        <li><a href="#java_and_javaScript">JavaScript and Java</a></li>
+                        <li><a href="#hello_world">Hello world</a></li>
+                        <li><a href="#variable">Variables</a></li>
+                        <li><a href="#declaring_variable">Declaring variables</a></li>
+                        <li><a href="#variable_scope">Variable scope</a></li>
+                        <li><a href="#global_variables">Global variables</a></li>
+                        <li><a href="#constant">Constants</a></li>
+                        <li><a href="#data_types">Data types</a></li>
+                        <li><a href="#if_else">if...else statement</a></li>
+                        <li><a href="#while_statement">While Statement</a></li>
+                        <li><a href="#function_declerations">Function Declerations</a></li>
+                        <li><a href="#reference">Reference</a></li>
+                    </ul>
+            </nav>
+            </header>
+
+
+
+
+
         <main><b>MOCKUP CONTENT
             Week 01</b>
             
             </main>
 
-        <h1>Introduction</h1>
+        <h1 id="intro">Introduction</h1>
         <p align=""justify>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
             JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
             </p>
@@ -17,7 +43,7 @@
             </li>
 
             <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server</li>
-   <h1>What you should already know
+   <h1 id="already-know">What you should already know
 </h1>
    <p>This guide assumes you have the following basic background:
 </p>
@@ -26,7 +52,7 @@
   <li> Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.
     </li>
 
-    <h1>JavaScript and Java
+    <h1 id="java_and_javaScript">JavaScript and Java
     </h1>
     <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
     </p>
@@ -37,7 +63,7 @@
 
 
 
-<h1>Hello world
+<h1 id="hello_world">Hello world
 </h1>
 <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
     function greetMe(yourName) { alert("Hello " + yourName); }
@@ -47,7 +73,7 @@
     </p>
       
 
-    <h1>Variables
+    <h1 id="variable">Variables
     </h1>
     <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
         A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
@@ -55,7 +81,7 @@
         
         </p>
 
-        <h1>Declaring variables
+        <h1 id="declaring_variable">Declaring variables
         </h1>
         <p>You can declare a variable in three ways:
             With the keyword var. For example,
@@ -67,7 +93,7 @@
             With the keyword let. For example,
             let y = 13.
             </p>
-            <h1>Variable scope
+            <h1 id="variable_scope">Variable scope
             </h1>
 
             <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.
@@ -77,13 +103,13 @@
                 if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
                 </p>
 
-                <h1>Global variables
+                <h1 id="global_variables">Global variables
                 </h1>
                 <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.
                     Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.
                     </p>
 
-                    <h1>Constants
+                    <h1 id="constant">Constants
                     </h1>
                     <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.
                         const PI = 3.14;
@@ -96,7 +122,7 @@
                         However, object attributes are not protected, so the following statement is executed without problems.
                         const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";
                         </p>
-                        <h1>Data types
+                        <h1 id="data_types">Data types
                         </h1>
                         <p>The latest ECMAScript standard defines seven data types:
                         </p>
@@ -111,7 +137,7 @@
                         <li>and Object
                             Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.
                             </li>
-                            <h1>if...else statement</h1>
+                            <h1 id="if_else">if...else statement</h1>
                             <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:
                             </p>
                             <ul>if (condition) { statement_1; } else { statement_2; }
@@ -140,7 +166,7 @@
                                 <ul>if ((x = y)) { /* statements here */ }
                                 </ul>
 
-                                <h1>while statement
+                                <h1 id="while_statement"> while statement
                                 </h1>
                                 <p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:
                                 </p>
@@ -173,7 +199,7 @@
 </ul>
 
 
-<h1>Function declarations
+<h1 id="function_declerations">Function declarations
 </h1>
 <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:
 </p>
@@ -194,7 +220,7 @@
 <ul>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.
 </ul>
 
-<h1>Reference
+<h1 id="reference">Reference
 </h1>
 <li>All the documentation in this page is taken from MDN</li>>
 
